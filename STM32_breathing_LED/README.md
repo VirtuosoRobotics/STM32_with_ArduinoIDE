@@ -6,7 +6,6 @@ breathing_LED
         1.STM32F103(blue pill)
         2.FTDI
         3.Mini USB
-        4.Micro USB
 
 ### 電路連接
 
