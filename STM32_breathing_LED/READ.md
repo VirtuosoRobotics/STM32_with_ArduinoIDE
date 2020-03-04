@@ -1,14 +1,14 @@
 breathing_LED 
 ========================================
 
-##  硬體部分
+###  硬體部分
 
         1.STM32F103(blue pill)
         2.FTDI
         3.Mini USB
         4.Micro USB
 
-## 電路連接
+### 電路連接
 
 
         FTDI_VCC --> MCU_5V

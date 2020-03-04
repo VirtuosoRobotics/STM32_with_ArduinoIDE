@@ -1,14 +1,15 @@
 STM32_with_ArduinoIDE 
 ========================================
 
-##  硬體部分
+###  硬體部分
 
         1.STM32F103(blue pill)
         2.FTDI
         3.Mini USB
-        4.Micro USB
+        4.Micro USB (後面會有燒錄方法)
+        5.ST-Link   (後面會有燒錄方法)
 
-## 電路連接
+### 電路連接
 
 stm32F103的腳位圖:
 
@@ -63,7 +64,7 @@ stm32F103的腳位圖:
         記得燒錄成功後，要再燒錄別的程式前先按 RESET 。
 
 
-## 2.使用 Micro USB 連 STM32F103
+## 2.使用 Micro USB 連 blue pill
 
 ### 環境建置
 
@@ -87,7 +88,7 @@ stm32F103的腳位圖:
 ### 兄弟恭喜來到最後了
 
 * 在上述步驟都完成後，我們便可將 Mini USB 拔下來換插 MicroUSB 了 
-* 切記並切換到 "" Operating Mode "" ，而且這樣才能讀 port 。
+* 切記並切換到 "" Operating Mode "" ，而且這樣才能讀到 port 。
 
         確認是否連接上
 
@@ -97,9 +98,10 @@ stm32F103的腳位圖:
         這樣就能透過 Micro USB 燒錄程式到 STM32F103 了!! Congratulations !! 
 
 
-## 3.使用 ST-LINK 連 STM32F103
+## 3.使用 ST-LINK 連 blue pill
 
-* 切記切換到 "" Programming Mode "" 按下RESET燒錄
+* 切記切換到 "" Programming Mode "" 按下RESET燒錄。
+* 燒進去後在插上Micro USB的話，可看見序列埠輸出。
 
          電路連接 :
 
@@ -110,5 +112,6 @@ stm32F103的腳位圖:
 
          Arduino IDE 上 TOOLS 裡面將 Upload method 設為 STLink(序列埠不用設)
          即可執行程式了。
+         
 
 ![image](https://github.com/VirtuosoRoboticsOfficial/STM32_with_ArduinoIDE/blob/master/picture/dog.jpg)
