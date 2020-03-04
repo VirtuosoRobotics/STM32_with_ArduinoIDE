@@ -15,7 +15,7 @@ stm32F103的腳位圖:
 
 ![image](https://github.com/VirtuosoRoboticsOfficial/STM32_with_ArduinoIDE/blob/master/picture/stm32f103c8t6_pinout.png)
 
-## 1.使用 FTDI 連 blue pill
+# 1.使用 FTDI 連 blue pill
 
         FTDI_VCC --> MCU_5V
         FTDI_GND --> MCU_G
@@ -64,11 +64,11 @@ stm32F103的腳位圖:
         記得燒錄成功後，要再燒錄別的程式前先按 RESET 。
 
 
-## 2.使用 Micro USB 連 blue pill
+# 2.使用 Micro USB 連 blue pill
 
 ### 環境建置
 
-* 記得要在 Programming Mode，FTDI 端也要連線
+* 記得要在 Programming Mode，FTDI 端也要連線，先按下 RESET 清空。
 * 將 tool 裡面的 en.flasher-stm32.zip 解壓縮，並照預設路徑執行安裝檔案
 * C:\Program Files (x86)\STMicroelectronics\Software\Flash Loader Demo 可找到執行檔 STMFlashLoader Demo.exe
 
@@ -98,10 +98,10 @@ stm32F103的腳位圖:
         這樣就能透過 Micro USB 燒錄程式到 STM32F103 了!! Congratulations !! 
 
 
-## 3.使用 ST-LINK 連 blue pill
+# 3.使用 ST-LINK 連 blue pill
 
-* 切記切換到 "" Programming Mode "" 按下RESET燒錄。
-* 燒進去後在插上Micro USB的話，可看見序列埠輸出。
+* 切記切換到 "" Programming Mode "" 按下 RESET 燒錄。
+* 燒進去後在插上 Micro USB 的話，可看見序列埠輸出。
 
          電路連接 :
 
