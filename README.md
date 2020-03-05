@@ -15,6 +15,8 @@ stm32F103的腳位圖:
 
 ![image](https://github.com/VirtuosoRoboticsOfficial/STM32_with_ArduinoIDE/blob/master/picture/stm32f103c8t6_pinout.png)
 
+---
+
 # 1.使用 FTDI 連 blue pill
 
         FTDI_VCC --> MCU_5V
@@ -51,6 +53,9 @@ stm32F103的腳位圖:
         8.( port 記得連 COMX ，X 因設備不同而異)
 ![image](https://github.com/VirtuosoRoboticsOfficial/STM32_with_ArduinoIDE/blob/master/picture/serial.png)
 
+        9.最後記得在 C:\Program Files (x86)\Arduino\hardware\Arduino_STM32-master\drivers\win  底下執行
+        install_drivers.bat  和  install_STM_COM_drivers.bat
+
 ## 執行程式
 
         
@@ -63,6 +68,8 @@ stm32F103的腳位圖:
         (因設備不同COM_PORT可能有差異，小編內設為COM8)
         記得燒錄成功後，要再燒錄別的程式前先按 RESET 。
 
+
+---
 
 # 2.使用 Micro USB 連 blue pill
 
@@ -80,8 +87,7 @@ stm32F103的腳位圖:
 ![image](https://github.com/VirtuosoRoboticsOfficial/STM32_with_ArduinoIDE/blob/master/picture/bin.png)
 
         3.最後 next ，讓他安裝完便可關閉。
-        4.在 C:\Program Files (x86)\Arduino\hardware\Arduino_STM32-master\drivers\win  底下執行
-        install_drivers.bat  和  install_STM_COM_drivers.bat
+
 
 ### Arduino IDE
 
@@ -97,6 +103,7 @@ stm32F103的腳位圖:
         最後在 Arduino IDE 上 TOOLS 裡面將 Upload method 設為 bootloader (port 記得連 COMX ， X 因設備不同而異)
         這樣就能透過 Micro USB 燒錄程式到 STM32F103 了!! Congratulations !! 
 
+---
 
 # 3.使用 ST-LINK 連 blue pill
 
